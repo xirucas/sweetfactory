@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Encomenda.css">
+    <title>SweetFactory</title>
+</head>
+<body>
+    <div class="main-block">
+        
+        <form action="/">
+          <div class="title">
+            <i class="fas fa-pencil-alt"></i> 
+            <h2>Fazer Encomenda</h2>
+          </div>
+          <div class="info">
+            <input class="fname" type="text" name="name" placeholder="Full name">
+            <input type="text" name="name" placeholder="Email">
+            <input type="text" name="name" placeholder="Phone number">
+            <input type="password" name="name" placeholder="Password">
+            <select>
+              <option value="course-type" selected>Course type*</option>
+              <option value="short-courses">Short courses</option>
+              <option value="featured-courses">Featured courses</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="diploma">Diploma</option>
+              <option value="certificate">Certificate</option>
+              <option value="masters-degree">Masters degree</option>
+              <option value="postgraduate">Postgraduate</option>
+            </select>
+          </div>
+          <button onclick="mostrarPopUp()"> Submit</button>
+        </form>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2>Título do Pop-up</h2>
+          <p>Conteúdo do Pop-up aqui</p>
+          <button onclick="fecharPopUp()">Fechar</button>
+        </div>
+      </div>
+
+</body>
+<script src="script.js"></script>
+</html>
